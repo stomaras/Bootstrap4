@@ -28,7 +28,13 @@
     https://coolors.com
   -->
   <!-- preloader section -->
+  <div class="preloader d-flex justify-content-center align-items-center">
+    <img src="img/preloader.gif" alt="preloader">
+  </div>
   <!-- end preloader section -->
+
+
+
   <!-- nav element -->
   <nav class="navbar navbar-expand-lg px-3" id="navBar">
     <a href="#" class="navbar-brand">
@@ -43,7 +49,7 @@
     <div class="collapse navbar-collapse" id="myNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
-          <a href="#Characteristics" class="nav-link">
+          <a href="#Characteristics" class="nav-link js--scroll-to-char">
             Characteristics
           </a>
         </li>
@@ -60,6 +66,13 @@
         <li class="nav-item active">
           <a href="#Energy Levels" class="nav-link">
             Energy Levels
+          </a>
+        </li>
+
+        <li class="nav-item active">
+          <a href="#Navigation Map" class="nav-link end">
+            Navigation Map
+            <i class="fas fa-long-arrow-alt-right"></i>
           </a>
         </li>
       </ul>
@@ -93,10 +106,12 @@
       </div>
     </div>
   </header>
+
+  <br>
   <!-- end of header section -->
   <!-- Characteristics Section -->
   <!-- The reason for this id is in order to have a target with a navbar-->
-  <section class="characteristics py-5" id="characteristics">
+  <section class="characteristics py-5 js--section-chars" id="characteristics">
     <div class="container">
     <!-- Section Title -->
     <div class="row mb-5">
@@ -158,6 +173,35 @@
 
   </section>
   <!-- End of Characteristics Section-->
+
+  <!-- Speed / Battery / Progress Section -->
+    <section class="section speed py-5" id="speed">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row mb-5">
+        <!-- With the flex-wrap when we go to smaller screen get wrapping! -->
+          <div class="col d-flex flex-wrap text-uppercase justify-content-center">
+            <h3 class="font-weight-bold align-self-center mx-1">Fleet</h3>
+            <h3 class="section-title--special mx-1">Speed/Battery/Progress</h3>
+          </div>
+        </div>
+    <!-- End of Section Title-->
+      </div>
+      <div class="row">
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card speed-card">
+            <div class="col-sm 6 col-md-4 text-center my-5">Battery Condition</div>
+            <a href="" class="battery-icon p-2 rounded-circle">
+              <i class="fas fa-battery-half"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </section>
+
+  <!-- End of Speed / Battery / Progress Section -->
 
 
   <!-- jquery -->

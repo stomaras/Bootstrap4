@@ -23,6 +23,21 @@ body{
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
+/* preloader */
+/* position fixed will make sure that position of the element is not within a flow of the document */
+.preloader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--mainWhite);
+  z-index: 999;
+}
+
+.hidePreloader{
+  display: none!important;
+}
 
 
 
@@ -52,6 +67,10 @@ body{
   color: var(--mainBlue);
 }
 
+.nav-link.end {
+  margin-left: 5rem;
+}
+
 .nav-icon{
   font-size: 1.5rem;
   color: var(--mainBlue);
@@ -71,7 +90,7 @@ body{
   overflow: hidden;
 }
 .height-max{
-  min-height: calc(100vh - 76px);
+  min-height: calc(100vh - 90px);
   background: url('../img/headerBcg.jpeg');
   background-position: center;
   background-size: cover;
