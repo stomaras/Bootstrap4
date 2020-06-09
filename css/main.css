@@ -15,6 +15,18 @@ body{
   color: var(--mainBlack);
   background: var(--mainWhite);
 }
+/* Section Title */
+.section-title--special{
+  background: var(--transparentBlue);
+  color: var(--mainWhite);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+
+
+
+
 /* REM values to target root element 1REM = 16px */
 
 /* navbar */
@@ -52,4 +64,80 @@ body{
 .nav-icon:hover{
   color: var(--mainBlack);
 }
+
+.header{
+  clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
+  color: var(--mainWhite);
+  overflow: hidden;
+}
+.height-max{
+  min-height: calc(100vh - 76px);
+  background: url('../img/headerBcg.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  animation-name: zoom;
+  animation-duration: 20s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+/* in order to create the animation i use keyframes*/
+@keyframes zoom{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2) translateX(-5%);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.title-heading{
+  background: rgba(0,0,0,0.4);
+  border-left: 0.3rem solid var(--mainBlue);
+}
+
+.title{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and(min-width:768px){
+  .title{
+    font-size: 3rem;
+  }
+}
+
+@media screen and(min-width:300px){
+  .title{
+    font-size: 3rem;
+  }
+}
+
+/* skills */
+.skills-icon{
+  font-size: 2rem;
+  color: var(--mainYellow);
+  background: var(--mainGrey);
+}
+
+.skills-icon:hover{
+  color: var(--mainYellow);
+}
+
+.skills-underline{
+  width: 3rem;
+  height: 0.3rem;
+  background: var(--mainBlue);
+  margin: 1rem auto;
+}
+
+
+
+
+
+
 
